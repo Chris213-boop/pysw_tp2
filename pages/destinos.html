@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos Turísticos de Argentina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        .destino-card {
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            overflow: hidden;
+        }
+
+        .destino-card.zoom {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 128, 1);
+        }
+    </style>
+    <main class="container">
+        <section class="mt-5">
+
+            <h2>Nuestros Destinos</h2>
+
+            <div class="d-flex flex-wrap justify-content-center gap-3 py-3">
+                <button data-filtro="todos" type="button" class="btn btn-outline-dark btn-lg">Todos</button>
+                <button data-filtro="naturaleza" type="button" class="btn btn-outline-dark btn-lg">Naturaleza</button>
+                <button data-filtro="montaña" type="button" class="btn btn-outline-dark btn-lg">Montaña</button>
+                <button data-filtro="ciudad" type="button" class="btn btn-outline-dark btn-lg">Ciudad</button>
+            </div>
+
+
+
+            <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 g-4">
+
+                <div class="col destino montaña">
+                    <div class="card h-100 destino-card">
+                        <img src="../../pysw_tp1/assets/img/bariloche.avif" class="card-img-top"
+                            alt="San Carlos de Bariloche">
+                        <div class="card-body">
+                            <h5 class="card-title">San Carlos de Bariloche</h5>
+                            <p>📍 Río Negro, Patagonia</p>
+                            <p class="card-text">Conocida como la "Perla de los Andes", Bariloche ofrece paisajes
+                                con lagos cristalinos, montañas nevadas y el famoso chocolate artesanal.</p>
+                            <div class="features">
+                                <span>Esquí</span>
+                                <span>Trekking</span>
+                                <span>Gastronomía</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col destino naturaleza">
+                    <div class="card h-100 destino-card">
+                        <img src="../../pysw_tp1/assets/img/cataratas-del-iguazu1.jpg" class="card-img-top"
+                            alt="Cataratas del Iguazú">
+                        <div class="card-body">
+                            <h5 class="card-title">Cataratas del Iguazú</h5>
+                            <p>📍 Misiones, Norte</p>
+                            <p class="card-text">Una de las maravillas naturales del mundo, compuesta por 275 cascadas
+                                rodeadas de selva tropical exuberante y biodiversidad única.</p>
+                            <div class="features">
+                                <span>Naturaleza</span>
+                                <span>Aventura</span>
+                                <span>Fotografía</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col destino montaña">
+                    <div class="card h-100 destino-card">
+                        <img src="../../pysw_tp1/assets/img/ushuaia.avif" class="card-img-top" alt="Ushuaia">
+                        <div class="card-body">
+                            <h5 class="card-title">Ushuaia</h5>
+                            <p class="location">📍 Tierra del Fuego, Patagonia</p>
+                            <p class="card-text">La ciudad más austral del mundo, conocida como "Fin del Mundo".
+                                Ofrece glaciares, canales y la oportunidad de ver pingüinos en su hábitat natural.</p>
+                            <div class="features">
+                                <span>Glaciares</span>
+                                <span>Cruceros</span>
+                                <span>Aventura</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col destino naturaleza">
+                    <div class="card h-100 destino-card">
+                        <img src="../../pysw_tp1/assets/img/mendoza.jpg" class="card-img-top" alt="Mendoza">
+                        <div class="card-body">
+                            <h5 class="card-title">Mendoza</h5>
+                            <p class="location">📍 Mendoza, Cuyo</p>
+                            <p class="card-text">Capital del vino argentino, rodeada por la Cordillera de los Andes.
+                                Ideal para rutas de bodegas, gastronomía y turismo de aventura.</p>
+                            <div class="features">
+                                <span>Vinos</span>
+                                <span>Gastronomía</span>
+                                <span>Montaña</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col destino cultural">
+                    <div class="card h-100 destino-card">
+                        <img src="../../pysw_tp1/assets/img/salta.webp" class="card-img-top" alt="Salta">
+                        <div class="card-body">
+                            <h5 class="card-title">Salta</h5>
+                            <p class="location">📍 Salta, Norte</p>
+                            <p class="card-text">Conocida como "La Linda", combina arquitectura colonial, gastronomía
+                                típica
+                                y paisajes de montañas coloradas, Salinas Grandes y el Tren de las Nubes.</p>
+                            <div class="features">
+                                <span>Cultura</span>
+                                <span>Historia</span>
+                                <span>Aventura</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col destino turismo">
+                    <div class="card h-100 destino-card">
+                        <img src="../../pysw_tp1/assets/img/villaCarlosPaz.webp" class="card-img-top" alt="Córdoba">
+                        <div class="card-body">
+                            <h5 class="card-title">Córdoba</h5>
+                            <p class="location">📍 Córdoba, Centro</p>
+                            <p class="card-text">La provincia más diversa de Argentina, con sierras, valles, ríos y
+                                lagunas.
+                                Perfecta para turismo aventura, eventos y turismo religioso.</p>
+                            <div class="features">
+                                <span>Sierras</span>
+                                <span>Aventura</span>
+                                <span>Turismo Rural</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h5 class="card-title">Tabla de Precios</h5>
+                </div>
+                <div class="card-body">
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Destino</th>
+                                    <th scope="col">Duración</th>
+                                    <th scope="col">Incluye</th>
+                                    <th scope="col">Precio por Persona</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Bariloche</th>
+                                    <td>5 días / 4 noches</td>
+                                    <td>Hotel 4★, desayuno, tours guiados</td>
+                                    <td>$450.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cataratas Iguazú</th>
+                                    <td>4 días / 3 noches</td>
+                                    <td>Hotel 4★, desayuno, entradas al parque</td>
+                                    <td>$380.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ushuaia</th>
+                                    <td>6 días / 5 noches</td>
+                                    <td>Hotel 4★, desayuno, tour glaciares</td>
+                                    <td>$520.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Mendoza</th>
+                                    <td>4 días / 3 noches</td>
+                                    <td>Hotel 4★, desayuno, ruta de bodegas</td>
+                                    <td>$320.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Salta</th>
+                                    <td>5 días / 4 noches</td>
+                                    <td>Hotel 4★, desayuno, Tren de las Nubes</td>
+                                    <td>$410.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Córdoba</th>
+                                    <td>3 días / 2 noches</td>
+                                    <td>Hotel 3★, desayuno, tours sierras</td>
+                                    <td>$180.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Paquete Norte Completo</th>
+                                    <td>8 días / 7 noches</td>
+                                    <td>Hoteles, todo incluido, guía local</td>
+                                    <td>$680.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Patagonia Express</th>
+                                    <td>10 días / 9 noches</td>
+                                    <td>Bariloche + Ushuaia, todo incluido</td>
+                                    <td>$890.000 ARS</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("button").click(function () {
+
+                let categoria = $(this).data("filtro");
+
+                $(".destino").hide();
+
+                if (categoria == "todos") {
+                    $(".destino").show();
+                } else {
+                    $(".destino").filter("." + categoria).show();
+                }
+
+            });
+
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $(".destino-card").mouseenter(function () {
+                $(this).addClass("zoom");
+            });
+
+            $(".destino-card").mouseleave(function () {
+                $(this).removeClass("zoom");
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

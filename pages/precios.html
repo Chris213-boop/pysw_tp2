@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        .img-destino {
+            width: 120px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+    <div class="container">
+        <section class="py-5">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h5 class="card-title">Tabla de Precios</h5>
+                </div>
+                <div class="card-body">
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Destino</th>
+                                    <th scope="col">Duración</th>
+                                    <th scope="col">Incluye</th>
+                                    <th scope="col">Precio por Persona</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="d-flex flex-column align-items-center text-center">
+                                        Bariloche
+                                        <img src="https://images.unsplash.com/photo-1531761535209-180857e963b9?w=100&h=60&fit=crop"
+                                            class="img-thumbnail img-destino" alt="Bariloche">
+
+                                    </th>
+                                    <td>5 días / 4 noches</td>
+                                    <td>
+                                        <span data-bs-toggle="tooltip" title="Hotel 4★, desayuno, tours guiados">
+                                            ⓘ
+                                        </span>
+                                    </td>
+                                    <td>$450.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="d-flex flex-column align-items-center text-center">Cataratas
+                                        Iguazú
+                                        <img src="https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=100&h=60&fit=crop"
+                                            class="img-thumbnail img-destino" alt="Iguazú">
+
+                                    </th>
+                                    <td>4 días / 3 noches</td>
+                                    <td>
+                                        <span data-bs-toggle="tooltip" title="Hotel 4★, desayuno, entradas al parque">
+                                            ⓘ
+                                        </span>
+                                    </td>
+                                    <td>$380.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="d-flex flex-column align-items-center text-center">Ushuaia
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAK7E9xL6y18uGxDd_ytFqe1FfTDGqPDRVkQ&s"
+                                            class="img-thumbnail img-destino" alt="Ushuaia">
+                                    </th>
+                                    <td>6 días / 5 noches</td>
+                                    <td>
+                                        <span data-bs-toggle="tooltip" title="Hotel 4★, desayuno, tour glaciares">
+                                            ⓘ
+                                        </span>
+                                    </td>
+                                    <td>$520.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="d-flex flex-column align-items-center text-center">Mendoza
+                                        <img src="https://images.unsplash.com/photo-1589553416260-f586c8f1514f?w=100&h=60&fit=crop"
+                                            class="img-thumbnail img-destino" alt="Mendoza">
+                                    </th>
+                                    <td>4 días / 3 noches</td>
+                                    <td>
+                                        <span data-bs-toggle="tooltip" title="Hotel 4★, desayuno, ruta de bodegas">
+                                            ⓘ
+                                        </span>
+                                    </td>
+                                    <td>$320.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="d-flex flex-column align-items-center text-center">Salta
+                                        <img src="https://resizer.iproimg.com/unsafe/768x/filters:format(webp):quality(75):max_bytes(102400)/https://assets.iprofesional.com/assets/jpg/2021/07/519409.jpg"
+                                            class="img-thumbnail img-destino" alt="Salta">
+                                    </th>
+                                    <td>5 días / 4 noches</td>
+                                    <td>
+                                        <span data-bs-toggle="tooltip" title="Hotel 4★, desayuno, Tren de las Nubes">
+                                            ⓘ
+                                        </span>
+                                    </td>
+                                    <td>$410.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="d-flex flex-column align-items-center text-center">Córdoba
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3KX86Y_7GAkK_FByAQRk_3velCCB0X7vQaQ&s"
+                                            class="img-thumbnail img-destino" alt="Córdoba">
+                                    </th>
+                                    <td>3 días / 2 noches</td>
+                                    <td>
+                                        <span data-bs-toggle="tooltip" title="Hotel 3★, desayuno, tours sierras">
+                                            ⓘ
+                                        </span>
+                                    </td>
+                                    <td>$180.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="d-flex flex-column align-items-center text-center">Paquete
+                                        Norte Completo
+                                        <img src="https://www.entornoturistico.com/wp-content/uploads/2018/06/paquete-tur%C3%ADstico.jpg"
+                                            class="img-thumbnail img-destino" alt="Norte Argentino">
+                                    </th>
+                                    <td>8 días / 7 noches</td>
+                                    <td>
+                                        <span data-bs-toggle="tooltip" title="Hoteles, todo incluido, guía local">
+                                            ⓘ
+                                        </span>
+                                    </td>
+                                    <td>$680.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="d-flex flex-column align-items-center text-center">Patagonia
+                                        Express
+                                        <img src="https://www.entornoturistico.com/wp-content/uploads/2018/06/paquete-tur%C3%ADstico.jpg"
+                                            class="img-thumbnail img-destino" alt="Patagonia Express">
+                                    </th>
+                                    <td>10 días / 9 noches</td>
+                                    <td>
+                                        <span data-bs-toggle="tooltip" title="Bariloche + Ushuaia, todo incluido">
+                                            ⓘ
+                                        </span>
+                                    </td>
+                                    <td>$890.000 ARS</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>

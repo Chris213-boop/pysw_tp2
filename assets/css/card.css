@@ -1,0 +1,16 @@
+/* 1. Forzar tamaño de imágenes */
+.card-destino .card-img-top {
+    height: 220px;       /* Altura fija para todas */
+    object-fit: cover;   /* Corta el sobrante sin estirar la imagen */
+}
+
+/* 2. Configuración del Hover */
+.card-destino {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-destino:hover {
+    transform: translateY(-8px); /* Eleva la carta */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important; /* Sombra más fuerte */
+    border-color: #0d6efd; /* Opcional: cambia el color del borde al color primario */
+}

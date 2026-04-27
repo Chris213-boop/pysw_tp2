@@ -1,0 +1,25 @@
+/* Forzar tamaño de imágenes en el carrusel */
+#carouselExampleDark .carousel-item img {
+    height: 500px; /* Altura fija */
+    object-fit: cover; /* Evita que se estiren las fotos */
+}
+
+/* Crear un fondo para las letras (Mejora el contraste) */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6); /* Fondo negro semitransparente */
+    border-radius: 15px;
+    padding: 20px;
+    bottom: 10%; /* Ajusta la posición vertical */
+}
+
+/* Color de fuente personalizado para que resalte */
+.carousel-caption h5 {
+    color: #ffc107; /* Un color dorado/amarillo resalta mucho en fotos */
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.carousel-caption p {
+    color: #ffffff; /* Texto blanco puro */
+    font-size: 1.2rem;
+}

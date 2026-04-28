@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="/pysw_tp2/assets/css/agencias.css">
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container py-5">
+        <h1 class="mb-4 text-center"><i class="bi bi-building"></i> Agencias de Viajes</h1>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+
+            <!-- TARJETA 1 -->
+            <div class="col">
+                <div class="card shadow-sm flip-card">
+                    <div class="flip-inner">
+                        <!-- Frente con imagen de fondo -->
+                        <div class="flip-front card-1">
+                            <div class="card-content">
+                                <h5 class="card-title">Turismo Norte</h5>
+                                <p class="card-text">Jujuy - Argentina</p>
+                            </div>
+                        </div>
+                        <!-- Reverso -->
+                        <div class="flip-back">
+                            <h2>Turismo Norte</h2>
+                            <p>Especialistas en viajes al norte argentino y escapadas culturales.</p>
+                            <!-- Sistema de rating con estrellas -->
+                            <div class="rating">
+                                <input type="radio" name="rating1" id="a1-5" value="5"><label for="a1-5">★</label>
+                                <input type="radio" name="rating1" id="a1-4" value="4"><label for="a1-4">★</label>
+                                <input type="radio" name="rating1" id="a1-3" value="3"><label for="a1-3">★</label>
+                                <input type="radio" name="rating1" id="a1-2" value="2"><label for="a1-2">★</label>
+                                <input type="radio" name="rating1" id="a1-1" value="1"><label for="a1-1">★</label>
+                            </div>
+                            <a href="#" class="btn-contact">Contactar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 2 -->
+            <div class="col">
+                <div class="card shadow-sm flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front card-2">
+                            <div class="card-content">
+                                <h5 class="card-title">Patagonia Tours</h5>
+                                <p class="card-text">Bariloche</p>
+                            </div>
+                        </div>
+                        <div class="flip-back">
+                            <h2>Patagonia Tours</h2>
+                            <p>Viajes a lagos, nieve y aventura en el sur argentino.</p>
+                            <div class="rating">
+                                <input type="radio" name="rating2" id="b1-5" value="5"><label for="b1-5">★</label>
+                                <input type="radio" name="rating2" id="b1-4" value="4"><label for="b1-4">★</label>
+                                <input type="radio" name="rating2" id="b1-3" value="3"><label for="b1-3">★</label>
+                                <input type="radio" name="rating2" id="b1-2" value="2"><label for="b1-2">★</label>
+                                <input type="radio" name="rating2" id="b1-1" value="1"><label for="b1-1">★</label>
+                            </div>
+                            <a href="#" class="btn-contact">Contactar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 3 -->
+            <div class="col">
+                <div class="card shadow-sm flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front card-3">
+                            <div class="card-content">
+                                <h5 class="card-title">Mar y Sol Viajes</h5>
+                                <p class="card-text">Costa Atlántica</p>
+                            </div>
+                        </div>
+                        <div class="flip-back">
+                            <h2>Mar y Sol Viajes</h2>
+                            <p>Especialistas en playa, relax y vacaciones familiares.</p>
+                            <div class="rating">
+                                <input type="radio" name="rating3" id="c1-5" value="5"><label for="c1-5">★</label>
+                                <input type="radio" name="rating3" id="c1-4" value="4"><label for="c1-4">★</label>
+                                <input type="radio" name="rating3" id="c1-3" value="3"><label for="c1-3">★</label>
+                                <input type="radio" name="rating3" id="c1-2" value="2"><label for="c1-2">★</label>
+                                <input type="radio" name="rating3" id="c1-1" value="1"><label for="c1-1">★</label>
+                            </div>
+                            <a href="#" class="btn-contact">Contactar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 4 -->
+            <div class="col">
+                <div class="card shadow-sm flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front card-4">
+                            <div class="card-content">
+                                <h5 class="card-title">Andes Travel</h5>
+                                <p class="card-text">Mendoza</p>
+                            </div>
+                        </div>
+                        <div class="flip-back">
+                            <h2>Andes Travel</h2>
+                            <p>Rutas del vino, montaña y experiencias premium.</p>
+                            <div class="rating">
+                                <input type="radio" name="rating4" id="d1-5" value="5"><label for="d1-5">★</label>
+                                <input type="radio" name="rating4" id="d1-4" value="4"><label for="d1-4">★</label>
+                                <input type="radio" name="rating4" id="d1-3" value="3"><label for="d1-3">★</label>
+                                <input type="radio" name="rating4" id="d1-2" value="2"><label for="d1-2">★</label>
+                                <input type="radio" name="rating4" id="d1-1" value="1"><label for="d1-1">★</label>
+                            </div>
+                            <a href="#" class="btn-contact">Contactar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 5 -->
+            <div class="col">
+                <div class="card shadow-sm flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front card-5">
+                            <div class="card-content">
+                                <h5 class="card-title">Selva Travel</h5>
+                                <p class="card-text">Misiones</p>
+                            </div>
+                        </div>
+                        <div class="flip-back">
+                            <h2>Selva Travel</h2>
+                            <p>Expertos en Cataratas del Iguazú, naturaleza y turismo ecológico.</p>
+                            <div class="rating">
+                                <input type="radio" name="rating5" id="e1-5" value="5"><label for="e1-5">★</label>
+                                <input type="radio" name="rating5" id="e1-4" value="4"><label for="e1-4">★</label>
+                                <input type="radio" name="rating5" id="e1-3" value="3"><label for="e1-3">★</label>
+                                <input type="radio" name="rating5" id="e1-2" value="2"><label for="e1-2">★</label>
+                                <input type="radio" name="rating5" id="e1-1" value="1"><label for="e1-1">★</label>
+                            </div>
+                            <a href="#" class="btn-contact">Contactar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 6 -->
+            <div class="col">
+                <div class="card shadow-sm flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front card-6">
+                            <div class="card-content">
+                                <h5 class="card-title">Fin del Mundo Tours</h5>
+                                <p class="card-text">Ushuaia</p>
+                            </div>
+                        </div>
+                        <div class="flip-back">
+                            <h2>Fin del Mundo Tours</h2>
+                            <p>Aventura, nieve y excursiones inolvidables en Tierra del Fuego.</p>
+                            <div class="rating">
+                                <input type="radio" name="rating6" id="f1-5" value="5"><label for="f1-5">★</label>
+                                <input type="radio" name="rating6" id="f1-4" value="4"><label for="f1-4">★</label>
+                                <input type="radio" name="rating6" id="f1-3" value="3"><label for="f1-3">★</label>
+                                <input type="radio" name="rating6" id="f1-2" value="2"><label for="f1-2">★</label>
+                                <input type="radio" name="rating6" id="f1-1" value="1"><label for="f1-1">★</label>
+                            </div>
+                            <a href="#" class="btn-contact">Contactar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 7 -->
+            <div class="col">
+                <div class="card shadow-sm flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front card-7">
+                            <div class="card-content">
+                                <h5 class="card-title">Quebrada Tours</h5>
+                                <p class="card-text">Humahuaca</p>
+                            </div>
+                        </div>
+                        <div class="flip-back">
+                            <h2>Quebrada Tours</h2>
+                            <p>Recorridos culturales por Purmamarca, Tilcara y Humahuaca.</p>
+                            <div class="rating">
+                                <input type="radio" name="rating7" id="g1-5" value="5"><label for="g1-5">★</label>
+                                <input type="radio" name="rating7" id="g1-4" value="4"><label for="g1-4">★</label>
+                                <input type="radio" name="rating7" id="g1-3" value="3"><label for="g1-3">★</label>
+                                <input type="radio" name="rating7" id="g1-2" value="2"><label for="g1-2">★</label>
+                                <input type="radio" name="rating7" id="g1-1" value="1"><label for="g1-1">★</label>
+                            </div>
+                            <a href="#" class="btn-contact">Contactar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 8 -->
+            <div class="col">
+                <div class="card shadow-sm flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front card-8">
+                            <div class="card-content">
+                                <h5 class="card-title">Pampa Viajes</h5>
+                                <p class="card-text">Buenos Aires</p>
+                            </div>
+                        </div>
+                        <div class="flip-back">
+                            <h2>Pampa Viajes</h2>
+                            <p>Escapadas urbanas, city tours y experiencias premium en Argentina.</p>
+                            <div class="rating">
+                                <input type="radio" name="rating8" id="h1-5" value="5"><label for="h1-5">★</label>
+                                <input type="radio" name="rating8" id="h1-4" value="4"><label for="h1-4">★</label>
+                                <input type="radio" name="rating8" id="h1-3" value="3"><label for="h1-3">★</label>
+                                <input type="radio" name="rating8" id="h1-2" value="2"><label for="h1-2">★</label>
+                                <input type="radio" name="rating8" id="h1-1" value="1"><label for="h1-1">★</label>
+                            </div>
+                            <a href="#" class="btn-contact">Contactar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../assets/js/include.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="../assets/js/agencia.js"></script>
+</body>
+
+</html>

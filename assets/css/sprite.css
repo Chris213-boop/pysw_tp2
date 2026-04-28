@@ -1,0 +1,129 @@
+
+.sprite {
+    display: inline-block;
+    width: 32px;
+    /* El tamaño de tu "ventana" */
+    height: 32px;
+
+    background-image: url('../img/Brujula\ iconos\ 8.png');
+    background-repeat: no-repeat;
+
+    /* 1. Altura fija, dejamos que el ancho sea el original de la imagen */
+    background-size: auto 32px;
+
+    /* 2. El Ajuste Inicial (Compensa el borde izquierdo desigual).
+       Prueba cambiar este '-5px' hasta que el PRIMER icono se vea perfectamente centrado. */
+    background-position: 0px 0;
+
+    /* Animación de 12 segundos, 12 saltos */
+    animation: cambiarIconot 8s steps(8) infinite;
+    vertical-align: middle;
+}
+
+@keyframes cambiarIconot {
+    from {
+        background-position: 0px 0;
+    }
+
+    to {
+        background-position: -350px 0;
+    }
+}
+
+.btn-sprite {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    background-image: url('../img/Buscar\ Iconos\ 8.png');
+    background-repeat: no-repeat;
+
+    background-size: auto 40px;
+
+    background-position: 0px 0;
+
+    animation: trans 8s steps(8) infinite;
+    vertical-align: middle;
+}
+@keyframes trans {
+    from {
+        background-position: 0px 0;
+    }
+
+    to {
+        background-position: -435px 0;
+    }
+}
+
+
+/* ICONO Whatsapp */
+
+.whatsapp-animado {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+
+    background-image: url('../img/Whatsapp\ iconos\ 8.png');
+    background-repeat: no-repeat;
+
+    background-size: auto 32px;
+
+    background-position: 0px 0;
+
+    animation: cambiarIconot 8s steps(8) infinite;
+    vertical-align: middle;
+}
+
+
+/* ICONO INSTAGRAM */
+
+.instagram-animado {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+
+    background-image: url('../img/Instagram\ iconos\ 8.png');
+    background-repeat: no-repeat;
+
+    background-size: auto 32px;
+
+    background-position: 0 0;
+
+    animation: cambiarIconot 8s steps(8) infinite;
+    vertical-align: middle;
+}
+
+
+/* ICONO YT */
+
+.youtube-animado {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+
+    background-image: url('../img/YT\ iconos\ 8.png');
+    background-repeat: no-repeat;
+
+    background-size: auto 32px;
+
+    background-position: 0 0;
+
+    animation: cambiarIconot 8s steps(8) infinite;
+    vertical-align: middle;
+}
+
+
+/* ICONO Linkedin */
+.linkedIn-animado {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+
+    background-image: url('../img/In\ iconos\ 8.png');
+    background-repeat: no-repeat;
+
+    background-size: auto 32px;
+    background-position: 0 0;
+    animation: cambiarIconot 8s steps(8) infinite;
+    vertical-align: middle;
+}

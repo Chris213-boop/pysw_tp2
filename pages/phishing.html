@@ -9,131 +9,196 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body>
-    <div class="container">
-        <div class="row">
+<body class="bg-light">
+    <div id="header"></div>
 
-            <main class="col-md-9">
+    <div class="container py-4">
 
-                <section>
-                    <h1>¡Cuidado con el phishing!</h1>
-                    <button type="button" class="btn btn-outline-success">Simulación de phishing</button>
+        <div class="row g-4">
+
+            <!-- MAIN -->
+            <main class="col-md-8">
+
+                <!-- HERO -->
+                <section class="bg-danger text-white text-center p-5 rounded shadow mb-4">
+                    <h1><i class="bi bi-shield-exclamation"></i> ¡Cuidado con el Phishing!</h1>
+                    <p class="mt-3">Aprendé a detectar engaños digitales y proteger tus datos personales.</p>
                 </section>
 
-                <section>
-                    <h2>¿Qué es el phishing?</h2>
-                    <p>Phishing es un tipo de estafa digital donde una persona o grupo intenta engañarte para robar
-                        información personal, como contraseñas, datos bancarios o códigos de verificación.</p>
-                    <h3>¿Cómo lo hacen?</h3>
-                    <p>
-                        Generalmente se hacen pasar por empresas conocidas como Google, Facebook, Mercado Libre o
-                        bancos, enviando:
+                <!-- ACCORDION -->
+                <div class="accordion shadow mb-4" id="accordionExample">
 
-                        Correos electrónicos falsos
-                        Mensajes por WhatsApp
-                        SMS
-                        Páginas web falsas muy parecidas a las reales
-                    </p>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#uno">
+                                ¿Qué es el phishing?
+                            </button>
+                        </h2>
+
+                        <div id="uno" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Es una estafa digital donde intentan robar contraseñas, datos bancarios o información
+                                personal.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#dos">
+                                ¿Cómo lo hacen?
+                            </button>
+                        </h2>
+
+                        <div id="dos" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Mediante correos falsos, mensajes por WhatsApp, SMS o páginas web falsas.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#tres">
+                                ¿Qué hacer?
+                            </button>
+                        </h2>
+
+                        <div id="tres" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                No abrir enlaces sospechosos, verificar remitentes y cambiar contraseña si caíste.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- SIMULACION -->
+                <section class="mb-4">
+
+                    <h2 class="mb-3">Simulación Educativa</h2>
+
+                    <button class="btn btn-success mb-3" id="btn-phishing">
+                        Probar simulación
+                    </button>
+
+                    <div id="phishing-demo" style="display:none;">
+
+                        <div class="card shadow-lg border-warning">
+
+                            <div class="card-header bg-warning">
+                                Inicio de sesión sospechoso
+                            </div>
+
+                            <div class="card-body">
+
+                                <p>Ingresá tus datos para continuar.</p>
+
+                                <input type="text" class="form-control mb-2" placeholder="Usuario">
+
+                                <input type="password" class="form-control mb-2" placeholder="Contraseña">
+
+                                <button class="btn btn-danger" id="btn-login">
+                                    Iniciar sesión
+                                </button>
+
+                                <div id="mensaje-alerta" class="alert alert-danger mt-3 d-none">
+                                    ⚠ Aquí es donde roban tus datos en un phishing real.
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- CHECKLIST -->
+                <section class="card shadow p-4">
+
+                    <h3 class="mb-3">Detectá las señales de fraude</h3>
+
+                    <div class="form-check">
+                        <input class="form-check-input fraude" type="checkbox">
+                        <label class="form-check-label">Link sospechoso</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input fraude" type="checkbox">
+                        <label class="form-check-label">Faltas de ortografía</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input fraude" type="checkbox">
+                        <label class="form-check-label">Solicita contraseña</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input fraude" type="checkbox">
+                        <label class="form-check-label">Mensaje urgente</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input fraude" type="checkbox">
+                        <label class="form-check-label">Promesa de premio falso</label>
+                    </div>
+
+                    <button class="btn btn-danger w-100 mt-3" id="verificar">
+                        Ver resultado
+                    </button>
+
+                    <div id="resultado" class="alert mt-3 d-none"></div>
+
                 </section>
 
             </main>
 
-            <aside class="col-md-3">
+            <!-- ASIDE -->
+            <aside class="col-md-4">
+                <div class="card shadow-sm mb-3">
+                    <img src="https://www.derten.com/sites/default/files/2022-02/cybersecurity-g9241fe287_1280.png"
+                        alt="phishing">
+                </div>
 
-                <section>
-                    <h3>Consejos rápidos</h3>
-                    <ul>
-                        <li>No abrir enlaces sospechosos</li>
-                        <li>Verificar remitentes</li>
-                        <li>No compartir contraseñas</li>
-                    </ul>
-                </section>
+                <div class="card shadow-sm mb-3">
+                    <div class="card-body">
+                        <h5><i class="bi bi-lightbulb"></i> Consejos rápidos</h5>
+                        <ul>
+                            <li>No compartir contraseñas</li>
+                            <li>Revisar remitente</li>
+                            <li>No abrir enlaces raros</li>
+                        </ul>
+                    </div>
+                </div>
 
-                <section>
-                    <h3>Dato útil</h3>
-                    <p>Los bancos no solicitan claves por correo.</p>
-                </section>
+                <div class="card shadow-sm mb-3">
+                    <div class="card-body">
+                        <h5><i class="bi bi-bank"></i> Dato útil</h5>
+                        <p>Los bancos nunca piden claves por correo.</p>
+                    </div>
+                </div>
 
-            </aside>
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5>Nivel de seguridad</h5>
 
-        </div>
-
-        <div>
-
-            <div>
-                <h2>Simulación Educativa</h2>
-                <button id="btn-phishing" type="button" class="btn btn-success">PROBAR SIMULACIÓN</button>
-                <section id="phishing-demo" style="display:none;">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Inicio de sesión</h5>
-                            <p class="card-text">Ingresa tus datos para continuar
-                            </p>
-                            <form class="mb-3">
-                                <input type="text" placeholder="Usuario o email" class="form-control mb-2">
-                                <input type="password" placeholder="Contraseña" class="form-control mb-2">
-                                <button type="button" class="btn btn-warning" id="btn-login">Iniciar sesión</button>
-                            </form>
-                            <p id="mensaje-alerta" style="color:red; display:none;"></p>
-                            <div
-                                class="p-3 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-3">
-                                ⚠ Esta es una simulación educativa de phishing </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width:80%">
+                                80%
+                            </div>
                         </div>
                     </div>
-                </section>
-            </div>
-
-            <div>
-
-                <section>
-                    <h3>Advertencia</h3>
-                    <p>Este ejemplo es solo educativo.</p>
-                </section>
-
-                <section>
-                    <h3>Ejemplo de mensaje sospechoso</h3>
-                    <p>“Tu cuenta fue bloqueada. Ingresá aquí para verificarla.”</p>
-                </section>
-
-                <section>
-                    <h3>Detecta las señales de fraude</h3>
-
-                    <label><input type="checkbox"> Link sospechoso</label><br>
-                    <label><input type="checkbox"> Faltas de ortografía</label><br>
-                    <label><input type="checkbox"> Solicita contraseña</label><br>
-                    <label><input type="checkbox"> Mensaje con urgencia inmediata</label><br>
-                    <label><input type="checkbox"> Remitente desconocido</label><br>
-                    <label><input type="checkbox"> Promesa de premio falso</label><br>
-                    <label><input type="checkbox"> Amenaza de bloqueo de cuenta</label><br>
-                </section>
-
-                <section>
-                    <button>Ver resultado</button>
-                </section>
-
-                <section>
-                    <p id="resultado"></p>
-                </section>
-
-            </div>
-
+                </div>
+            </aside>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-        $("#btn-phishing").click(function () {
-            $("#phishing-demo").show();
-        });
-    </script>
-    <script>
-        $("#btn-login").click(function () {
-            $("#mensaje-alerta")
-                .text("⚠ Alerta: aquí es donde te roban tus datos en un phishing real.")
-                .show();
-        });
-    </script>
+    <script src="../assets/js/phishing.js"></script>
+    <div id="footer"></div>
+    <script src="../assets/js/include.js"></script>
 
 </body>
 

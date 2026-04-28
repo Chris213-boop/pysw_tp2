@@ -7,24 +7,15 @@
     <title>Destinos Turísticos de Argentina</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../pysw_tp2/assets/css/destinos.css">
 </head>
 
 <body>
-    <style>
-        .destino-card {
-            transition: transform 0.4s ease, box-shadow 0.4s ease;
-            overflow: hidden;
-        }
-
-        .destino-card.zoom {
-            transform: scale(1.05);
-            box-shadow: 0 10px 25px rgba(0, 0, 128, 1);
-        }
-    </style>
+    <div id="header"></div>
     <main class="container">
         <section class="mt-5">
 
-            <h2>Nuestros Destinos</h2>
+            <h2 class="text-center">Nuestros Destinos</h2>
 
             <div class="d-flex flex-wrap justify-content-center gap-3 py-3">
                 <button data-filtro="todos" type="button" class="btn btn-outline-dark btn-lg">Todos</button>
@@ -32,9 +23,6 @@
                 <button data-filtro="montaña" type="button" class="btn btn-outline-dark btn-lg">Montaña</button>
                 <button data-filtro="ciudad" type="button" class="btn btn-outline-dark btn-lg">Ciudad</button>
             </div>
-
-
-
             <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 g-4">
 
                 <div class="col destino montaña">
@@ -142,6 +130,129 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col destino naturaleza">
+                    <div class="card h-100 destino-card">
+                        <img src="../../pysw_tp2/assets/img/elCalafate.jpg" class="card-img-top" alt="El Calafate">
+                        <div class="card-body">
+                            <h5 class="card-title">El Calafate</h5>
+                            <p class="location">📍 Santa Cruz, Patagonia</p>
+                            <p class="card-text">Puerta de entrada al Parque Nacional Los Glaciares. Aquí se encuentra
+                                el glaciar Perito Moreno, uno de los más impresionantes del mundo.</p>
+                            <div class="features">
+                                <span>Glaciares</span>
+                                <span>Naturaleza</span>
+                                <span>Aventura</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col destino naturaleza">
+                    <div class="card h-100 destino-card">
+                        <img src="../../pysw_tp2/assets/img/puertoMadrin.jpg" class="card-img-top" alt="Puerto Madryn">
+                        <div class="card-body">
+                            <h5 class="card-title">Puerto Madryn</h5>
+                            <p class="location">📍 Chubut, Patagonia</p>
+                            <p class="card-text">Capital del avistaje de ballenas en Argentina. Sus aguas cristalinas
+                                y playas de arena dorada ofrecen experiencias únicas de buceo y ecoturismo.</p>
+                            <div class="features">
+                                <span>Ballenas</span>
+                                <span>Buceo</span>
+                                <span>Fauna Marina</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col destino ciudad">
+                    <div class="card h-100 destino-card">
+                        <img src="../../pysw_tp2/assets/img/rosario.jpg" class="card-img-top" alt="Rosario">
+                        <div class="card-body">
+                            <h5 class="card-title">Rosario</h5>
+                            <p class="location">📍 Santa Fe, Litoral</p>
+                            <p class="card-text">Segunda ciudad más importante de Argentina, birthplace de Messi y
+                                ciudad natal de Che Guevara. Combina cultura, historia y vida nocturna.</p>
+                            <div class="features">
+                                <span>Cultura</span>
+                                <span>Historia</span>
+                                <span>Deportes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col destino ciudad">
+                    <div class="card h-100 destino-card">
+                        <img src="../../pysw_tp2/assets/img/playaMarDelPlata.jpg" class="card-img-top" alt="Mar del Plata">
+                        <div class="card-body">
+                            <h5 class="card-title">Mar del Plata</h5>
+                            <p class="location">📍 Buenos Aires, Costa Atlántica</p>
+                            <p class="card-text">La principal ciudad balnearia de Argentina, conocida como "La
+                                Feliz".
+                                Ofrece playas, casinos, teatros y una intensa vida cultural durante todo el año.</p>
+                            <div class="features">
+                                <span>Playa</span>
+                                <span>Turismo</span>
+                                <span>Entretenimiento</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col destino cultural">
+                    <div class="card h-100 destino-card">
+                        <img src="../../pysw_tp2/assets/img/sanMiguelDeTucuman.jpg" class="card-img-top" alt="San Miguel de Tucumán">
+                        <div class="card-body">
+                            <h5 class="card-title">San Miguel de Tucumán</h5>
+                            <p class="location">📍 Tucumán, Norte</p>
+                            <p class="card-text">Ciudad histórica donde se firmó la Declaración de Independencia
+                                argentina.
+                                Rodeada de montañas y reconocida por su gastronomía y yerba mate.</p>
+                            <div class="features">
+                                <span>Historia</span>
+                                <span>Cultura</span>
+                                <span>Gastronomía</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col destino montaña">
+                    <div class="card h-100 destino-card">
+                        <img src="../../pysw_tp2/assets/img/villaLaAngostura.webp" class="card-img-top" alt="Villa La Angostura">
+                        <div class="card-body">
+                            <h5 class="card-title">Villa La Angostura</h5>
+                            <p class="location">📍 Neuquén, Patagonia</p>
+                            <p class="card-text">Conocida como "La Perla del Nahuel Huapi", ofrece paisajes de
+                                bosques
+                                nativos, lagos cristalinos y acceso al Parque Nacional Los Arrayanes.</p>
+                            <div class="features">
+                                <span>Montaña</span>
+                                <span>Naturaleza</span>
+                                <span>Esquí</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col destino naturaleza">
+                    <div class="card h-100 destino-card">
+                        <img src="../../pysw_tp2/assets/img/valleDeLaLuna.jpeg" class="card-img-top" alt="Valle de la Luna">
+                        <div class="card-body">
+                            <h5 class="card-title">Ischigualasto - Valle de la Luna</h5>
+                            <p class="location">📍 San Juan, Cuyo</p>
+                            <p class="card-text">Parque Nacional declarado Patrimonio de la Humanidad, famoso por sus
+                                formaciones rocosas que parecen provenir de otro planeta y hallazgos paleontológicos.</p>
+                            <div class="features">
+                                <span>Aventura</span>
+                                <span>Ciencia</span>
+                                <span>Paisajes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -200,6 +311,48 @@
                                     <td>$180.000 ARS</td>
                                 </tr>
                                 <tr>
+                                    <th scope="row">El Calafate</th>
+                                    <td>4 días / 3 noches</td>
+                                    <td>Hotel 4★, desayuno, tour glaciar Perito Moreno</td>
+                                    <td>$480.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Puerto Madryn</th>
+                                    <td>3 días / 2 noches</td>
+                                    <td>Hotel 4★, desayuno, avistaje de ballenas</td>
+                                    <td>$290.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Rosario</th>
+                                    <td>2 días / 1 noche</td>
+                                    <td>Hotel 3★, desayuno, tour ciudad</td>
+                                    <td>$120.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Mar del Plata</th>
+                                    <td>4 días / 3 noches</td>
+                                    <td>Hotel 4★, desayuno, acceso playa</td>
+                                    <td>$250.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Tucumán</th>
+                                    <td>3 días / 2 noches</td>
+                                    <td>Hotel 3★, desayuno, tour histórico</td>
+                                    <td>$160.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Villa La Angostura</th>
+                                    <td>4 días / 3 noches</td>
+                                    <td>Hotel 4★, desayuno, Parque Nacional Arrayanes</td>
+                                    <td>$380.000 ARS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ischigualasto</th>
+                                    <td>3 días / 2 noches</td>
+                                    <td>Hotel 3★, desayuno, tour Valle de la Luna</td>
+                                    <td>$220.000 ARS</td>
+                                </tr>
+                                <tr>
                                     <th scope="row">Paquete Norte Completo</th>
                                     <td>8 días / 7 noches</td>
                                     <td>Hoteles, todo incluido, guía local</td>
@@ -220,40 +373,11 @@
 
         </section>
     </main>
-
+    <div id="footer"></div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script>
-        $(document).ready(function () {
-
-            $("button").click(function () {
-
-                let categoria = $(this).data("filtro");
-
-                $(".destino").hide();
-
-                if (categoria == "todos") {
-                    $(".destino").show();
-                } else {
-                    $(".destino").filter("." + categoria).show();
-                }
-
-            });
-
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-
-            $(".destino-card").mouseenter(function () {
-                $(this).addClass("zoom");
-            });
-
-            $(".destino-card").mouseleave(function () {
-                $(this).removeClass("zoom");
-            });
-
-        });
-    </script>
+    <script src="../assets/js/filtro.js"></script>
+    <script src="../assets/js/hoverDestino.js"></script>
+    <script src="../assets/js/include.js"></script>
 
 </body>
 

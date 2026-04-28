@@ -1,0 +1,10 @@
+.img-destino {
+    width: 150px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.img-destino:hover {
+    transform: scale(1.08);
+}

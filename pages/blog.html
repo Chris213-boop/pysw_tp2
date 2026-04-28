@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="/pysw_tp2/assets/css/layout.css"    rel="stylesheet">
+    <link href="/pysw_tp2/assets/css/sprite.css"    rel="stylesheet">
+
+    <title>Blog - ADN Travel</title>
+</head>
+    
+<body>
+    <div id="header"></div>
+
+    <div class="container my-5">
+
+        <h1 class="text-center mb-5">
+            <i class="bi bi-newspaper"></i> Blog ADN Travel Argentina
+        </h1>
+
+        <!-- FILTROS -->
+        <div class="d-flex justify-content-center gap-2 mb-4 flex-wrap">
+            <button class="btn btn-outline-primary filtro" data-categoria="all">Todos</button>
+            <button class="btn btn-outline-primary filtro" data-categoria="norte">Norte</button>
+            <button class="btn btn-outline-primary filtro" data-categoria="sur">Sur</button>
+            <button class="btn btn-outline-primary filtro" data-categoria="ciudad">Ciudad</button>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- 1 -->
+            <div class="col-md-6 col-lg-4 post" data-categoria="sur">
+                <div class="card shadow h-100 post-card">
+                    <img src="https://services.meteored.com/img/article/cuando-y-como-ver-los-desprendimientos-del-glaciar-perito-moreno-una-guia-completa-para-visitarlo-en-1756165100615_512.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Glaciar Perito Moreno</h5>
+                        <p>Una de las maravillas naturales más impactantes del mundo.</p>
+                        <ul>
+                            <li>❄️ "Me dejó sin palabras, es enorme." - Juan</li>
+                            <li>❄️ "El ruido del hielo rompiéndose es increíble." - Sofía</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="col-md-6 col-lg-4 post" data-categoria="norte">
+                <div class="card shadow h-100 post-card">
+                    <img src="https://www.civitatis.com/f/argentina/salta/excursion-quebrada-humahuaca-589x392.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Quebrada de Humahuaca</h5>
+                        <p>Paisajes de colores únicos en el norte argentino.</p>
+                        <ul>
+                            <li>🌄 "Los cerros parecen pintados." - Lucía</li>
+                            <li>🌄 "Volvería mil veces." - Martín</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="col-md-6 col-lg-4 post" data-categoria="sur">
+                <div class="card shadow h-100 post-card">
+                    <img src="https://www.civitatis.com/f/argentina/bariloche/free-tour-bariloche-589x392.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Bariloche</h5>
+                        <p>Montañas, lagos y chocolate en la Patagonia.</p>
+                        <ul>
+                            <li>🏔 "Hermoso en invierno." - Carla</li>
+                            <li>🏔 "El lago Nahuel Huapi es increíble." - Diego</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="col-md-6 col-lg-4 post" data-categoria="norte">
+                <div class="card shadow h-100 post-card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/14/40/db/the-great-salinas-grandes.jpg?w=900&h=500&s=1" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Salinas Grandes</h5>
+                        <p>Un paisaje blanco infinito que parece otro planeta.</p>
+                        <ul>
+                            <li>🧂 "Perfecto para fotos." - Ana</li>
+                            <li>🌅 "Nunca vi algo igual." - Pedro</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="col-md-6 col-lg-4 post" data-categoria="ciudad">
+                <div class="card shadow h-100 post-card">
+                    <img src="https://cdn.britannica.com/63/188963-050-2C94FEC2/Night-view-obelisk-Buenos-Aires.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Buenos Aires</h5>
+                        <p>La capital con cultura, tango y gastronomía.</p>
+                        <ul>
+                            <li>💃 "El ambiente es único." - Laura</li>
+                            <li>🏃‍♂️ "Mucho para recorrer." - Nico</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="col-md-6 col-lg-4 post" data-categoria="sur">
+                <div class="card shadow h-100 post-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPNl3OignDx2fG2dtOombi0LV_v6dP8NCvIA&s" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Ushuaia</h5>
+                        <p>La ciudad del fin del mundo.</p>
+                        <ul>
+                            <li>🌎 "Una experiencia única." - Marcos</li>
+                            <li>🐧 "El paisaje es impresionante." - Vale</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="col-md-6 col-lg-4 post" data-categoria="norte">
+                <div class="card shadow h-100 post-card">
+                    <img src="https://content-viajes.nationalgeographic.com.es/medio/2024/07/19/iguazu_964b1569_240719141424_1280x854.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Cataratas del Iguazú</h5>
+                        <p>Una de las 7 maravillas naturales del mundo.</p>
+                        <ul>
+                            <li>🐒 "La Garganta del Diablo es increíble." - Julián</li>
+                            <li>💦 "Te mojás pero vale la pena." - Flor</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="col-md-6 col-lg-4 post" data-categoria="sur">
+                <div class="card shadow h-100 post-card">
+                    <img src="https://revistapanorama.com/storage/2022/04/chalten-panorama.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>El Chaltén</h5>
+                        <p>Capital del trekking en Argentina.</p>
+                        <ul>
+                            <li>🥾 "Senderos espectaculares." - Leo</li>
+                            <li>⛰️ "Ideal para aventureros." - Mica</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="col-md-6 col-lg-4 post" data-categoria="ciudad">
+                <div class="card shadow h-100 post-card">
+                    <img src="https://media.staticontent.com/media/pictures/e43505a4-c488-495c-a466-58763d1d6fed" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Córdoba</h5>
+                        <p>Sierras, ríos y vida nocturna.</p>
+                        <ul>
+                            <li>🌙 "Muy divertido." - Agus</li>
+                            <li>🥳 "Hermosos paisajes." - Fede</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10 -->
+            <div class="col-md-6 col-lg-4 post" data-categoria="norte">
+                <div class="card shadow h-100 post-card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/96/12/8b/rura-68.jpg?w=1200&h=700&s=1" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Cafayate</h5>
+                        <p>Viñedos y paisajes rojizos espectaculares.</p>
+                        <ul>
+                            <li>🍷 "El vino es excelente." - Pablo</li>
+                            <li>🪨 "Paisajes únicos." - Romina</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="/pysw_tp2/assets/js/include.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/pysw_tp2/assets/js/layout.js"></script>
+
+
+</body>
+</html>
